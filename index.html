@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busia Ride - Smart Ride Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Busia Ride - Your Smart Ride Solution</h1>
+    </header>
+    <main>
+        <section id="booking">
+            <h2>Book a Ride</h2>
+            <form id="ride-form">
+                <label for="pickup">Pickup Location:</label>
+                <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required>
+                
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+                
+                <label for="vehicle">Choose Ride:</label>
+                <select id="vehicle" name="vehicle">
+                    <option value="car">Car</option>
+                    <option value="boda">Boda Boda</option>
+                </select>
+                
+                <button type="submit">Request Ride</button>
+            </form>
+        </section>
+        
+        <section id="map-container">
+            <h2>Live Map</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+</body>
+</html>
